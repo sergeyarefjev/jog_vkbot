@@ -1,0 +1,9 @@
+python-decouple
+psycopg[async,pool,binary]
+vkbottle
+pandas
+oi
+joblib
+sklearn
+matplotlib
+xgboost
