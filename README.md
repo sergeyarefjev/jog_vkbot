@@ -1,6 +1,5 @@
 # 🏃 Running Stats Bot
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue)](https://python.org)
 [![VK](https://img.shields.io/badge/VK-Bot-0077FF)](https://vk.com/club235939336)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
