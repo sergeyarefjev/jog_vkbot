@@ -40,25 +40,25 @@
 ## 🧱 Структура проекта
 ```text
 running_bot/
-├── database/ # Работа с БД
+├── database/
 │ ├── init.py
-│ └── db.py # Подключение и запросы
-├── handlers/ # Обработчики команд
+│ └── db.py
+├── handlers/
 │ ├── init.py
 │ ├── main.py
 │ ├── menu.py
 │ ├── start.py
 │ └── work_with_db.py
-├── keyboards/ # Клавиатуры
+├── keyboards/
 │ ├── init.py
 │ └── all_keyboards.py
-├── ml_models/ # ML модель (соперник)
+├── ml_models/
 │ ├── init.py
-│ └── models.py # Обучение и предсказание темпа
-├── .env # Переменные окружения (токены, БД)
-├── bot_run.py # Точка входа
-├── create_bot.py # Инициализация бота
-├── requirements.txt # Зависимости
+│ └── models.py
+├── .env
+├── bot_run.py
+├── create_bot.py
+├── requirements.txt
 └── README.md
 ```
 ---
