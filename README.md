@@ -61,6 +61,62 @@ running_bot/
 ├── requirements.txt
 └── README.md
 ```
+## Структура базы данных
+## 🗄 ER-диаграмма (Mermaid)
+
+```mermaid
+erDiagram
+    users {
+          user_id BIGINT PK
+          gender TEXT
+          weight INT
+          height INT
+          birthday DATE
+          run_time REAL
+          shoes TEXT
+          date_join DATE
+    }
+    
+    jogging {
+          user_id BIGINT
+          jog_id INT
+          start_jog TIMESTAMPTZ
+          finish_jog TIMESTAMPTZ
+          name_jog TEXT
+          caption_jog TEXT
+          distance REAL
+          time TIME
+          calories REAL
+          average_heart_rate INT
+          max_heart_rate INT
+          average_pace TIME
+          max_pace TIME
+          min_height REAL
+          max_height REAL
+          shoes TEXT
+          temperature INT
+          wind_speed INT
+    }
+    
+      setting_status{
+          user_id BIGINT PK
+          notice_long_ago INT
+      }
+      goal{
+          user_id BIGINT
+          start_time TIMESTAMPTZ
+          finish_time TIMESTAMPTZ
+          count_running INT
+          distance REAL
+          all_time INT
+          all_height REAL
+          status BOOL
+    }
+
+    users ||--|| setting_status : ""
+    users ||--o{ jogging : "user_jog"
+    users ||--o{ goal : "user_goal"
+```
 ---
 
 ## Технологии
