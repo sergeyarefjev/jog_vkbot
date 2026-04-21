@@ -60,6 +60,10 @@ running_bot/
 ├── create_bot.py
 ├── requirements.txt
 └── README.md
+
+model/
+- covid_intelligence.ipynb #EDA данных пробежек многих пользователей
+- jog_bot_ml.ipynb #Выбор и обучение модели
 ```
 ## Структура базы данных
 ## 🗄 ER-диаграмма (Mermaid)
